@@ -30,13 +30,13 @@ public function store(Request $request)
 {
     Log::info('Store method called');
 
-    $request->validate([
-        'judul' => 'required|string|max:255',
-        'deskripsi' => 'required|string',
-        'penulis_id' => 'required|exists:penulis,id',
-        'penerbit_id' => 'required|exists:penerbits,id',
-        'file_ebook' => 'nullable|file|mimes:pdf|max:2048'
-    ]);
+    // $request->validate([
+    //     'judul' => 'required|string|max:255',
+    //     'deskripsi' => 'required|string',
+    //     'penulis_id' => 'required|exists:penulis,id',
+    //     'penerbit_id' => 'required|exists:penerbits,id',
+    //     'file_ebook' => 'nullable|file|mimes:pdf|max:2048'
+    // ]);
 
     Log::info('Validation passed');
 
